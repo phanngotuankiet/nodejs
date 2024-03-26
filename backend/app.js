@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
 
-const testGenreModelFile = require('./models/Users');
+// test genres fetch
+const testGenreModelFile = require('./models/MediaTypes');
 
 app.get("/", (req, res) => {
   res.json(testGenreModelFile.all());
 });
-// test
 
 const port = 4000;
 
